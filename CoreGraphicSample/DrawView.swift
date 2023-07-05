@@ -54,6 +54,9 @@ class DrawView: UIView {
         context.setLineWidth(4.0)
         if isFilled{
             context.setFillColor(UIColor.purple.cgColor)
+            // Note: Persian :
+            /// دقت کن که خطوط هم اضافه کنی که تیکه دایره به خوبی رسم بشه
+            /// اینجا قطعه دایره رسم میشه اما باید با رسم دوتا خط دیگه هم بتونی رسم رو کامل کنی
             context.addLine(to: centerPoint)
             context.addLine(to: CGPoint(x: centerPoint.x + 30, y: centerPoint.y ))
             context.fillPath()
